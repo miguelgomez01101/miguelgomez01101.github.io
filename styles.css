@@ -1,0 +1,174 @@
+body{
+    width: 100%; overflow-x: hidden; font-family: 'Lato', sans-serif; margin: 0;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #f7931e;
+    border-radius: 4px;
+}
+.cont-tarjetas a{
+    color: #f7931e;
+    transition: .2s;
+}
+.cont-tarjetas a:hover{
+    color: #187dcf;
+}
+.txtOctubre{
+    color: #11568D;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+.txtDias{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: 800;
+    color: #f7931e;
+}
+.tarjeta{
+    height: 500px;
+    min-width: 500px;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+.tarjeta img{
+    height: 100%;
+    position: relative;
+}
+.txt{
+    position: absolute;
+    left: 0; top: 390px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    transition: .3s;
+    height:600px;
+    font-size: 20px;
+}
+.marginTxt{
+    margin: 30px 25px;
+}
+.tarjeta:hover .txt{
+    top: 0px;
+}
+.cont-tarjetas{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    min-width: 300px;
+    overflow-x: scroll;
+    position: relative;
+}
+.cont-tarjetas::-webkit-scrollbar {
+    height: 10px;
+}
+.cont-tarjetas::-webkit-scrollbar-thumb{
+    background: #11568D;
+    border-radius: 5px;
+}
+.cont-tarjetas::-webkit-scrollbar-thumb:hover{
+    background: #187dcf;
+    box-shadow: 0px 0px 5px 0px #353535 
+}
+
+.txttitulo{
+    display: block;
+    font-weight: 800;
+    font-size: 23px;
+    min-height: 57px;
+}
+.flechaiz{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0) 100%);
+    z-index: 999;
+    cursor: pointer;
+}
+.flechader{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 500px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 999;
+    cursor: pointer;
+}
+.flechaizimg,.flechaderimg{
+    fill: #fdb25d;
+    position: relative;
+    top: 45%;
+    transition: .3s;
+    left: 0;
+}
+.flechaiz:hover .flechaizimg{
+    left: -5px;
+    fill: white;
+}
+.flechader:hover .flechaderimg{
+    left: -5px;
+    fill: white;
+}
+.flechaspace{
+    min-width: 40px;
+    height: 500px;
+    color: transparent;
+    background-color: rgb(36, 36, 36);
+}
+.interfazContTar{
+    width: 100%;
+    height: 510px;
+    position: relative;
+    display: flex;
+}
+.modXL{
+    font-size: 18px;
+}
+
+@media (max-width:500px){
+    .tarjeta{
+        height: 300px;
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .txttitulo{
+        font-size: 20px;
+        min-height: 58px;
+    }
+    .txt{
+        top: 200px;
+        height:600px;
+        font-size: 18px;
+    }
+    .marginTxt{
+        margin: 20px 15px;
+    }
+    .flechaiz{
+        width: 30px;
+        height: 300px;
+    }
+    .flechader{
+        width: 30px;
+        height: 300px;
+    }
+    .flechaspace{
+        min-width: 30px;
+        height: 300px;
+    }
+    .interfazContTar{
+        height: 310px;
+    }
+    .modXL{
+        font-size: 15px;
+    }
+}
