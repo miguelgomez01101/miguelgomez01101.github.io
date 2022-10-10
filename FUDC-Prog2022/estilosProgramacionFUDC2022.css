@@ -1,5 +1,5 @@
 body{
-  width: 100%; overflow-x: hidden; font-family: 'Lato', sans-serif; margin: 0;
+  width: 100%; overflow-x: hidden; font-family: 'Lato', sans-serif; margin: 0; font-size: 20px;
 }
 .ocultar{
     display: none;
@@ -23,14 +23,14 @@ body::-webkit-scrollbar-thumb{
   display: block;
   text-align: center;
   padding: 10px 0;
-  font-size: 30px;
+  font-size: 1.5em;
   font-weight: 800;
 }
 .txtDias{
   display: block;
   text-align: center;
   padding: 10px 0;
-  font-size: 30px;
+  font-size: 1.5em;
   font-weight: 800;
   color: #f7931e;
 }
@@ -49,11 +49,13 @@ body::-webkit-scrollbar-thumb{
 .txt{
   position: absolute;
   left: 0; top: 390px;
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.4); */
   width: 100%;
   transition: .3s;
   height:600px;
-  font-size: 20px;
+  font-size: 1em;
+  backdrop-filter: blur(10px) brightness(55%);
+  
 }
 .Mpresencial{
   top: 0;
@@ -100,7 +102,7 @@ body::-webkit-scrollbar-thumb{
 .txttitulo{
   display: block;
   font-weight: 800;
-  font-size: 23px;
+  font-size: 1.15em;
   min-height: 57px;
 }
 .flechaiz{
@@ -151,23 +153,24 @@ body::-webkit-scrollbar-thumb{
   display: flex;
 }
 .modXL{
-  font-size: 18px;
+  font-size: 0.9em;
 }
 
 @media (max-width:500px){
+  body{
+    font-size: 12px;
+  }
   .tarjeta{
     height: 300px;
     min-width: 300px;
     max-width: 300px;
   }
   .txttitulo{
-    font-size: 20px;
-    min-height: 58px;
+    min-height: 25px;
   }
   .txt{
-    top: 200px;
+    top: 230px;
     height:600px;
-    font-size: 18px;
   }
   .marginTxt{
     margin: 20px 15px;
@@ -188,6 +191,6 @@ body::-webkit-scrollbar-thumb{
     height: 310px;
   }
   .modXL{
-    font-size: 15px;
+    font-size: .75em;
   }
 }
