@@ -495,9 +495,9 @@ footer{
 			top: 50%;
 		}
 
-/*
-PÁGINA2 HANYU
-*/
+/* ____________________________________ */
+/*               HANYU MOBILE                  */
+/* ------------------------------------ */
 #description{
 	position: relative;
 	width: 100vw;
@@ -1541,7 +1541,7 @@ SECCIÓN IR AL SITIO
 		box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
 		transition: 0.1s;
 	}
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 781px){
 	.contenedor_logo{
 		width: 30vw;
 		height: 100%;
@@ -1783,14 +1783,15 @@ footer{
 		}
 
 /* ____________________________________ */
-/*               HANYU                  */
+/*               HANYU DESKTOP                 */
 /* ------------------------------------ */
 
 #description{
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	/* padding: 10%; */
+	justify-content: space-between;
+	padding: 0 20%;
+	box-sizing: border-box;
 }
 	.img_project{
 		width: 300px;
@@ -1827,7 +1828,7 @@ footer{
 	}
 .cont_identificador{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 	.principal_id{
 		margin: 0;
@@ -1836,26 +1837,30 @@ footer{
 	}
 	.cont_part_id{
 		margin: 0;
-		width: 400px;
+		width: 70%
+	}
+	.id_n{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 		.id_n_h{
-			height: auto;
+			height: 190px;
 			align-items: flex-start;
 			justify-content: space-between;
-			margin-bottom: 10px;
 		}
 			.cont_img_idH, .cont_img_idH2{
 				width: 50%;
-				height: 100px;
+				height: 100%;
 				margin-left: 20px;
 			}
 			.color1, .color2{
 				width: 80px;
-				height: 80px;
+				height: 100%;
 				margin: 0;
 			}
 			.txt_color{
-				height: 80px;
+				height: 100%;
 			}
 
 
@@ -1921,7 +1926,7 @@ footer{
 .mod_pines{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-end;
 }
 	.contPines{
