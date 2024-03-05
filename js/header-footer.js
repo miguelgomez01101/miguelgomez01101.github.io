@@ -1,6 +1,7 @@
 const header = document.querySelector('header');
 const footer = document.querySelector('footer');
 
+
 // Obtén el año actual
 var ActualYear = new Date().getFullYear();
 
@@ -47,7 +48,7 @@ footer.innerHTML = `
 								<h4>Miguel Gómez Designer</h4>
 							</div>
 						</a>
-						<a href="https://www.instagram.com/miguelgomezdesigner/" target="_blank">
+						<a href="https://www.instagram.com/miguelg01101/" target="_blank">
 							<div class="cont_2_footer">
 								<div id="instagram_icon_footer"></div>
 								<h4>@miguelg01101</h4>
