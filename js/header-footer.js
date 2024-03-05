@@ -9,7 +9,7 @@ header.innerHTML = `
 		<div class="menu_bar" id="top">
 			<div class="back-black"></div>
 			<div class="contenedor_logo">
-				<a href="index.html">
+				<a href="/">
 					<img src="images/horizontal_mgd.svg" alt="Identificador Miguel Gómez">
 				</a>
 			</div>
@@ -33,7 +33,7 @@ header.innerHTML = `
 footer.innerHTML = `
 <div class="hr"></div>
 		<div class="cont_footer">
-			<a href="#topUp">
+			<a href="/">
 				<div id="cont_id"><img src="images/mgd_v_n_gris.svg" alt="Identificador Miguel Gómez vertical"></div>
 			</a>
 			<div id="hr_v"></div>
